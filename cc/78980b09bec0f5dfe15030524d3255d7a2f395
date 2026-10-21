@@ -1,0 +1,33 @@
+.gitignore
+  s_4b0eea0052dd79::t_d5ee2956c9d6ad 29-32
+Local.xcconfig.example
+  s_4b0eea0052dd79::t_28b719043ef765 1-6
+Telegram-Mac/Info.plist
+  s_4b0eea0052dd79::t_ee39ae4262e70c 68-71
+Telegram-Mac/common.xcconfig
+  s_4b0eea0052dd79::t_58737dcd3086fa 16-17
+configurations/Alpha.xcconfig
+  s_4b0eea0052dd79::t_b142ee9204e14b 19-20
+configurations/Beta.xcconfig
+  s_4b0eea0052dd79::t_6dee127608f947 18-19
+configurations/Stable.xcconfig
+  s_4b0eea0052dd79::t_ebd9895715bb6c 16-17
+scripts/hooks/pre-commit
+  s_4b0eea0052dd79::t_e14585e81cdbdc 1-22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "cc78980b09bec0f5dfe15030524d3255d7a2f395",
+  "prompts": {},
+  "sessions": {
+    "s_4b0eea0052dd79": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15ee3-4084-7071-b730-a9281616cb2a",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "geranton93 <Xlive93@yandex.ru>"
+    }
+  }
+}
