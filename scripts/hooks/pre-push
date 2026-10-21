@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# pre-push hook: block pushes that carry credential-shaped values.
+# Enabled via `git config core.hooksPath scripts/hooks` in this repository.
+
+set -uo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+HOOK_DIR="$REPO_ROOT/scripts/hooks"
+SCANNER="$REPO_ROOT/scripts/secret-scan.sh"
+
+if [ ! -x "$SCANNER" ]; then
+  echo "pre-push: scanner not executable, run: chmod +x scripts/secret-scan.sh"
+  exit 1
+fi
+
+if ! "$SCANNER" all; then
+  echo "pre-push: credential scan failed, push rejected."
+  exit 1
+fi
+
+exit 0
