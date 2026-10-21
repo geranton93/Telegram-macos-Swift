@@ -1,0 +1,19 @@
+scripts/secret-scan.sh
+  s_3398762d52306c::t_a3dfc03179f0f6 1-118
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "733a94fbf605f04759e505c0e2b7aca215f58d99",
+  "prompts": {},
+  "sessions": {
+    "s_3398762d52306c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15ee4-fdeb-7503-b9e1-c034893ec5b9",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "geranton93 <Xlive93@yandex.ru>"
+    }
+  }
+}
