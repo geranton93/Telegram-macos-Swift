@@ -1,0 +1,35 @@
+.gitignore
+  s_4b0eea0052dd79::t_354d4eb4a8bb69 1-28
+README.md
+  s_4b0eea0052dd79::t_f58cda1d7be5f3 1-45
+docs/00-constraints.md
+  s_3398762d52306c::t_0ff34d0a1ebf23 1-103
+docs/04-skills-stack.md
+  s_4b0eea0052dd79::t_5b795eef2eccf7 1-300
+docs/UPSTREAM-README.md
+  s_4b0eea0052dd79::t_1bb8c233279bdd 1-78
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e4fd6fb9fbce1cdea41a9382d8f3156ac0b96135",
+  "prompts": {},
+  "sessions": {
+    "s_3398762d52306c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15ee4-fdeb-7503-b9e1-c034893ec5b9",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "geranton93 <Xlive93@yandex.ru>"
+    },
+    "s_4b0eea0052dd79": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a15ee3-4084-7071-b730-a9281616cb2a",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "geranton93 <Xlive93@yandex.ru>"
+    }
+  }
+}
