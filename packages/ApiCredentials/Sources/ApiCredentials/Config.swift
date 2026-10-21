@@ -2,20 +2,23 @@ import Cocoa
 
 public final class ApiEnvironment {
     public static var apiId:Int32 {
-        return 0
+        guard let raw = Configuration.credential(.apiId) else {
+            return 0
+        }
+        return Int32(raw) ?? 0
     }
     public static var apiHash:String {
-        return "REPLACE_WITH_OWN_API_HASH"
+        return Configuration.credential(.apiHash) ?? ""
     }
     
     public static var bundleId: String {
-        return "ru.geranton93.gergram"
+        return Configuration.credential(.bundleId) ?? "ru.geranton93.gergram"
     }
     public static var intentsBundleId: String {
         return teamId + "." + bundleId + ".FocusIntents"
     }
     public static var teamId: String {
-        return "REPLACE_WITH_YOUR_APPLE_TEAM_ID"
+        return Configuration.credential(.teamId) ?? "REPLACE_WITH_YOUR_APPLE_TEAM_ID"
     }
     
     

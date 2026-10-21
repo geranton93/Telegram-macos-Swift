@@ -16,3 +16,5 @@ SFEED_URL = https:${SIMPLE_SLASH}/updates.geranton93.dev/versions.xml
 
 TYPE = -D'ALPHA'
 OTHER_SWIFT_FLAGS = $(TYPE)
+
+#include? "../Local.xcconfig"

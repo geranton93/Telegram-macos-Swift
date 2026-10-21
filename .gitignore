@@ -26,3 +26,7 @@ core-xprojects/tde2e/build
 *.xcworkspace/xcuserdata/
 DerivedData/
 build/
+
+# local credentials — never committed
+Local.xcconfig
+*.local.xcconfig

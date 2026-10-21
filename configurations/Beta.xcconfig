@@ -15,3 +15,5 @@ SOURCE = BETA
 
 TYPE = -D'BETA'
 OTHER_SWIFT_FLAGS = $(TYPE)
+
+#include? "../Local.xcconfig"

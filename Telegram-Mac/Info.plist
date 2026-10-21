@@ -65,6 +65,10 @@
 	<string>NSApplication</string>
 	<key>SOURCE</key>
 	<string>${SOURCE}</string>
+	<key>API_ID</key>
+	<string>${API_ID}</string>
+	<key>API_HASH</key>
+	<string>${API_HASH}</string>
 	<key>SUFeedURL</key>
 	<string>${SFEED_URL}</string>
 	<key>SUPublicDSAKeyFile</key>

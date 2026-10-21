@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#
+# pre-commit hook: reject a commit that stages credential-shaped values or a
+# gitignored local secret file.
+# Enabled via `git config core.hooksPath scripts/hooks` in this repository.
+
+set -uo pipefail
+
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+SCANNER="$REPO_ROOT/scripts/secret-scan.sh"
+
+if [ ! -x "$SCANNER" ]; then
+  echo "pre-commit: scanner not executable, run: chmod +x scripts/secret-scan.sh"
+  exit 1
+fi
+
+if ! "$SCANNER" staged; then
+  echo "pre-commit: credential scan failed, commit rejected."
+  exit 1
+fi
+
+exit 0
